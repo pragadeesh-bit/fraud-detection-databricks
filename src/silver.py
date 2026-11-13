@@ -13,7 +13,6 @@ def clean_transactions(df: DataFrame) -> DataFrame:
 
     cleaned_df = (
         df.filter("transaction_id IS NOT NULL")
-          .filter("amount > 0")
           .filter("status = 'SUCCESS'")
     )
 
