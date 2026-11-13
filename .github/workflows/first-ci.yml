@@ -1,0 +1,18 @@
+
+name: My First CI Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print welcome message
+        run: echo "Hello! My first CI pipeline is running."
+
+      - name: Print project name
+        run: echo "Fraud Detection Data Engineering"
